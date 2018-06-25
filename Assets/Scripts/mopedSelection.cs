@@ -146,6 +146,7 @@ public class mopedSelection : MonoBehaviour {
         }
 
         Coins = PlayerPrefs.GetInt("Coins");
+        
     }
     void OnDestroy()
     {

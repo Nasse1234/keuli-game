@@ -33,7 +33,8 @@ public class mopedPhysics : MonoBehaviour {
 
     void Start()
     {
-        
+        spriteR = gameObject.GetComponent<SpriteRenderer>();
+
         score = 0;
 
         verSpeed = 1.5f;
@@ -49,27 +50,27 @@ public class mopedPhysics : MonoBehaviour {
         ScreenWidth = Screen.width;
         ScreenHeight = Screen.height;
 
-        int moped = PlayerPrefs.GetInt("moped");
-        if (moped == 1)
+        
+        if (PlayerPrefs.GetInt("moped") == 1) 
         {
             spriteR.sprite = senda;
             print("derbi");
         }
-        else if (moped == 2)
+        else if (PlayerPrefs.GetInt("moped") == 2)
         {
             spriteR.sprite = dt;
             print("dt");
         }
-        else if (moped == 3)
+        else if (PlayerPrefs.GetInt("moped") == 3)
         {
             spriteR.sprite = fantic;
             print("fantic");
         }
-        else if(moped == 4)
+        else if (PlayerPrefs.GetInt("moped") == 4)
         {
             spriteR.sprite = monkey;
         }
-        else if(moped == 5)
+        else if (PlayerPrefs.GetInt("moped") == 5)
         {
             spriteR.sprite = pv;
         }
