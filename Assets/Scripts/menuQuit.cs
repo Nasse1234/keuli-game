@@ -8,6 +8,10 @@ public class menuQuit : MonoBehaviour {
     {
         Application.Quit();
     }
+    public void clear()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 
     // Use this for initialization
     void Start () {
