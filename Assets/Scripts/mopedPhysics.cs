@@ -39,8 +39,8 @@ public class mopedPhysics : MonoBehaviour {
 
         verSpeed = 1.5f;
 
-        putoamisVauhti = 150;
-        power = 115;
+        putoamisVauhti = 125;
+        power = 100;
         
         Coins = PlayerPrefs.GetInt("Coins");
         HighScore = PlayerPrefs.GetInt("HighScore");
@@ -109,11 +109,11 @@ public class mopedPhysics : MonoBehaviour {
         }
         if(rb2D.rotation < 30)
         {
-            power = 75;
+            putoamisVauhti = 155;
         }
         else
         {
-            power = 115;
+            putoamisVauhti = 125;
         }
 
         if(peliAlkanut == true && gameOver == false && frames % 10 == 0)
