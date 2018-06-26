@@ -390,7 +390,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.3207547, g: 0.31509706, b: 0.26477394, a: 0}
+  m_BackGroundColor: {r: 0.4245283, g: 0.3866061, b: 0.22227661, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -1709,7 +1709,7 @@ MonoBehaviour:
   dt: {fileID: 21300000, guid: 2b7c27745e39654459d296a256093600, type: 3}
   fantic: {fileID: 21300000, guid: e60d138db205d9e4599596ab4178729b, type: 3}
   monkey: {fileID: 21300000, guid: e72583facc6182343ac4027f461a4447, type: 3}
-  pv: {fileID: 21300000, guid: 4f52dfc72f18491459d5c0fc10ca4f65, type: 3}
+  pv: {fileID: 21300000, guid: 08f555d93b036db48ab650f9599fdb99, type: 3}
   gameOver: 0
   peliAlkanut: 0
   textscore: {fileID: 507300565}
@@ -1796,7 +1796,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1449300866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.14, y: -0.69, z: 0}
+  m_LocalPosition: {x: -9.54, y: -0.81, z: 0}
   m_LocalScale: {x: 6.744831, y: 7.0105186, z: 20.43109}
   m_Children: []
   m_Father: {fileID: 0}
