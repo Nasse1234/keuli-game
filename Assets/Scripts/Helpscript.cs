@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class menuStart : MonoBehaviour {
-
-    public void changeMenuScene(string sceneName)
+public class Helpscript : MonoBehaviour {
+    
+    public void backmenu()
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene("Menu");
     }
 
 	// Use this for initialization
