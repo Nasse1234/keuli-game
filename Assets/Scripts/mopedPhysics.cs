@@ -29,6 +29,8 @@ public class mopedPhysics : MonoBehaviour {
     public Rigidbody2D rb2D;
     public int Coins;
 
+    public GameObject countdown;
+
     private SpriteRenderer spriteR;
 
     void Start()
@@ -51,7 +53,7 @@ public class mopedPhysics : MonoBehaviour {
         ScreenHeight = Screen.height;
 
         
-        if (PlayerPrefs.GetInt("moped") == 1) 
+        if (PlayerPrefs.GetInt("moped") == 4) 
         {
             spriteR.sprite = senda;
             print("derbi");
@@ -66,7 +68,7 @@ public class mopedPhysics : MonoBehaviour {
             spriteR.sprite = fantic;
             print("fantic");
         }
-        else if (PlayerPrefs.GetInt("moped") == 4)
+        else if (PlayerPrefs.GetInt("moped") == 1)
         {
             spriteR.sprite = monkey;
         }
@@ -122,6 +124,10 @@ public class mopedPhysics : MonoBehaviour {
                 score++;
             
             
+        }
+        if(peliAlkanut == true)
+        {
+            Destroy(countdown);
         }
 
     

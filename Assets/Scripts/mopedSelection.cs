@@ -27,6 +27,14 @@ public class mopedSelection : MonoBehaviour {
     public Button pvbutton;
     public Sprite pvimage;
 
+    public GameObject hinta1;
+
+    public GameObject hinta2;
+
+    public GameObject hinta3;
+
+    public GameObject hinta4;
+
     public void senda()
     {
         PlayerPrefs.SetInt("moped", 1);
@@ -131,18 +139,22 @@ public class mopedSelection : MonoBehaviour {
         if(dtostettu == 1)
         {
             dtbutton.GetComponent<Image>().sprite = dtimage;
+            Destroy(hinta1);
         }
         if(fanticostettu == 1)
         {
             fanticbutton.GetComponent<Image>().sprite = fanticimage;
+            Destroy(hinta2);
         }
         if(monkeyostettu == 1)
         {
             monkeybutton.GetComponent<Image>().sprite = monkeyimage;
+            Destroy(hinta3);
         }
         if(pvostettu == 1)
         {
             pvbutton.GetComponent<Image>().sprite = pvimage;
+            Destroy(hinta4);
         }
 
         Coins = PlayerPrefs.GetInt("Coins");
